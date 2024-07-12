@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+    --green: #004c23;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s cubic-bezier(.38, 1.15, .7, 1.12);
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+}
+
+*::selection {
+    background: var(--green);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1.3rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #3333;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--green);
+}
+
+#menu-icon {
+    font-size: 2.5rem;
+    color: #666;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+html::-webkit-scrollbar {
+    width: 1.3rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #3333;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--green);
+}
+
+section {
+    min-height: 100vh;
+    padding: 0 7%;
+    padding-top: 7.5rem;
+    /* position: relative; Needed for z-index to work */
+    position: sticky;
+    top: 0;
+}
+
+.btn {
+    display: inline-block;
+    border: .2rem solid var(--green);
+    font-size: 1.7rem;
+    color: var(--green);
+    background: rgba(0, 255, 0, .1);
+    margin-top: 1rem;
+    padding: .7rem 3rem;
+}
+
+.btn:hover {
+    background: var(--green);
+    color: #fff;
+    border-radius: 5rem;
+}
+
+
+header {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 7%;
+    /* background: var(--green); */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+header a.go_to_website{
+    color: var(--green);
+    font-size: 2.4rem;
+}
+
+header a.go_to_website:hover {
+    letter-spacing: 2px;
+}
+
+
+header  .logos_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 2rem 0;
+}
+
+header  .logos_content img {
+    width: 21.5rem;
+}
+
+header .logos_content span {
+    font-size: 3.8rem;
+    color: #caa063;
+    margin-left: 0.5rem;
+}
+
+
+.card_wrapper {
+    /* background: var(--green); */
+    padding: 4.2rem 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card_wrapper  .card {
+    background-color: #fff;
+    max-width: 320px;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 5px;
+    margin-bottom: 60px;
+}
+
+.card_wrapper  .card:hover {
+    background-color: #e0dcdc;
+    position: relative;
+    max-width: 325px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.card_wrapper  .card .card_image  {
+    height: 180px;
+}
+
+.card_wrapper  .card .card_image  img{
+    height: 180px;
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+
+.card_wrapper  .card .card_body {
+    padding: 3.4rem;
+}
+
+.card_body h2 {
+    font-size: 2.1rem;
+    color: #373039;
+    line-height: 18px;
+}
+
+.card_wrapper  .card:hover .card_body  h2 {
+    letter-spacing: 1px;
+    color: #004c23;
+}
+
+.card_body p {
+    font-size: 1.7rem;
+    color: #969ea2;
+    line-height: 18px;
+    margin-top: 10px;
+}
+
+.card_body p.card_text_ii {
+    margin-top: 20px;
+}
+
+.card_body h5 {
+    color: #f55552;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+
+.card_body .btn_wrapper {
+    margin-top: 10px;
+    display: flex;
+    
+}
+
+.card_body .btn_wrapper a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 1.6rem;
+    background-color: var(--green);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.card_body .btn_wrapper a:hover {
+    letter-spacing: 2px;
+}
+
+.card_body .btn_wrapper .learn_more {
+    background: #373039;
+    margin-left: 10px;
+
+}
+
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #004c23;;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+}
+
+footer i {
+    display: none;
+}
+
+@media (max-width:1110px) {
+    .card_wrapper {
+        /* background: var(--green); */
+        padding: 4.2rem 0.5%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:991px) {
+    .card_wrapper {
+        /* background: var(--green); */
+        padding: 4.2rem 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width:768px) {
+    .card_wrapper {
+        /* background: var(--green); */
+        padding: 4.2rem 2%;
+        justify-content: space-around;
+    }
+
+    .card_wrapper  .card {
+        background-color: #fff;
+        max-width: 250px;
+        border-radius: 7px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    
+        margin-bottom: 40px;
+    }
+
+    .card_body h2 {
+        font-size: 1.8rem;
+    }
+    
+    .card_body p {
+        font-size: 1.3rem;
+        color: #969ea2;
+        line-height: 18px;
+        margin-top: 10px;
+    }
+    
+    .card_body p.card_text_ii {
+        margin-top: 20px;
+    }
+    
+    .card_body h5 {
+        color: #f55552;
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+
+    .card_body .btn_wrapper a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 800;
+        padding: 1.1rem;
+        background-color: var(--green);
+        color: #fff;
+        border-radius: 10px;
+    }
+
+    header a.go_to_website{
+        color: var(--green);
+        font-size: 1.4rem;
+    }
+    
+   
+    
+   
+    
+    header  .logos_content img {
+        width: 15.5rem;
+    }
+
+    footer {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 1.3rem;
+        color: #004c23;
+    }
+}
+
+
+@media (max-width:400px) {
+    
+    .card_wrapper  .card {
+        background-color: #fff;
+        min-width: 320px;
+        border-radius: 7px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+        margin-bottom: 40px;
+    }
+
+    header a.go_to_website{
+        color: var(--green);
+        font-size: 1.4rem;
+    }
+    
+   
+    
+   
+    
+    header  .logos_content img {
+        width: 15.5rem;
+    }
+
+    footer {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 1.3rem;
+        color: #004c23;
+    }
+    
+   
+}

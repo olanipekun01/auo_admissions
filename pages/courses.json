@@ -1,0 +1,282 @@
+[
+    {
+        "id": 1,
+        "faculty": "Faculty of Clinical Sciences",
+        "courses": [
+            {
+                "course": "MBBS. - Medicine & Surgery",
+                "img": "medicine.jpg"
+            }
+        ]
+    },
+
+    {
+        "id": 2,
+        "faculty": "Faculty of Pharmacy",
+        "courses": [
+            {
+                "course": "Pharm. D. - Doctor of Pharmacy",
+                "img": "pharmacy.jpg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "faculty": "Faculty of Nursing Science",
+        "courses": [
+            {
+                "course": "B.NSc. - Nursing Science",
+                "img": "nursing.jpg"
+            }
+        ]
+        
+    },
+
+    {
+        "id": 4,
+        "faculty": "Faculty of Medical Laboratory Science",
+        "courses": [
+            {
+                "course": "B.MLS. - Medical Laboratory Science",
+                "img": "mls.jpg"
+            }
+        ]
+        
+    },
+
+    {
+        "id": 5,
+        "faculty": "Faculty of Allied Health Sciences",
+        "courses": [
+            {
+                "course": "DPT. - Doctor of Physiotherapy",
+                "img": "physiotherapy.png"
+            },
+            {
+                "course": "B.Sc. Public Health",
+                "img": "public.jpg"
+            },
+            {
+                "course": "B.Sc. Health Information Management",
+                "img": "him.jpg"
+            } 
+        ]
+        
+    },
+
+    {
+        "id": 6,
+        "faculty": "Faculty of Basic Medical Sciences",
+        "courses": [
+            {
+                "course": "B.Sc. Human Anatomy",
+                "img": "physiology.jpg"
+            },
+            {
+                "course": "B.Sc. Human Physiology",
+                "img": "physiology.jpg"
+            }
+        ]
+        
+    },
+
+    {
+        "id": 7,
+        "faculty": "College of Engineering and Technology",
+        "courses": [
+            {
+                "course": "B.Eng. Electrical & Electronics Engineering",
+                "img": "electrical.jpg"
+            },
+            {
+                "course": "B.Eng. Computer Engineering",
+                "img": "computer_eng.jpg"
+            },
+            {
+                "course": "B.Eng. Mechatronics Engineering",
+                "img": "mechatronics.png"
+            },
+            {
+                "course": "B.Eng. Mechanical Engineering",
+                "img": "mechanical.jpg"
+            },
+            {
+                "course": "B.Eng. Biomedical Engineering",
+                "img": "biomedical.png"
+            },
+            {
+                "course": "B.Eng. Civil and Environmental Engineering",
+                "img": "civil.jpg"
+            }
+        ]
+    },
+
+    {
+        "id": 8,
+        "faculty": "College of Law",
+        "courses": [
+            {
+                "course": "LL.B. - Bachelor of Laws",
+                "img": "law.jpg"
+            }
+        ]
+        
+    },
+
+    {
+        "id": 9,
+        "faculty": "College of Natural and Applied Sciences",
+        "courses": [
+            {
+                "course": "B.Sc. Microbiolgy",
+                "img": "microbiology.jpg"
+            },
+            {
+                "course": "B.Sc. Plant Science & Technology",
+                "img": "plant.jpg"
+            },
+            {
+                "course": "B.Sc. Industrial Chemistry",
+                "img": "industrial_chemistry.jpg"
+            },
+            {
+                "course": "B.Sc. Biochemistry",
+                "img": "biochemistry.jpg"
+            },
+            {
+                "course": "B.Sc. Geology",
+                "img": "geology.jpg"
+            },
+            {
+                "course": "B.Sc. Remote Sensing and Geoscience Information System",
+                "img": "geoscience.jpg"
+            },
+            {
+                "course": "B.Sc. Computer Science",
+                "img": "computer_sci.jpg"
+            }
+        ]
+    },
+
+    {
+        "id": 10,
+        "faculty": "Faculty of Social and Management Sciences",
+        "courses": [
+            {
+                "course": "B.Sc. Accounting",
+                "img": "accounting.jpg"
+            },
+            {
+                "course": "B.Sc. Business Administration",
+                "img": "business_admin.png"
+            },
+            {
+                "course": "B.Sc. Economics",
+                "img": "economics.jpg"
+            },
+            {
+                "course": "B.Sc. Mass Communication",
+                "img": "mass_comm.jpg"
+            },
+            {
+                "course": "B.Sc. Political Science",
+                "img": "political.jpeg"
+            },
+            {
+                "course": "B.Sc. International Relations",
+                "img": "international.jpg"
+            },
+            {
+                "course": "B.Sc. Public Administration",
+                "img": "public_admin.png"
+            },
+            {
+                "course": "B.Sc. Sociology",
+                "img": "sociology.png"
+            },
+            {
+                "course": "B.Sc. Criminology & Security Studies",
+                "img": "criminology.jpg"
+            },
+            {
+                "course": "B.Sc. Procurement Management",
+                "img": "procurement.jpg"
+            },
+            {
+                "course": "B.Sc. Banking & Finanace",
+                "img": "banking.jpg"
+            }
+        ]
+    },
+
+    {
+        "id": 11,
+        "faculty": "Faculty of Education",
+        "courses": [
+            {
+                "course": "B.Ed. Guidance and Counselling",
+                "img": "guidance.png"
+            },
+            {
+                "course": "B.LIS. Library and Information Science",
+                "img": "library.jpg"
+            },
+            {
+                "course": "B.Sc. (Ed.) Chemistry",
+                "img": "chemistry.jpg"
+            },
+            {
+                "course": "B.Sc. (Ed.) Biology",
+                "img": "biology.jpg"
+            }
+        ]
+    },
+
+    {
+        "id": 12,
+        "faculty": "School Of Postgraduate Studies",
+        "courses": [
+            {
+                "course": "Medical Laboratory Science - PGD, M.Sc., Ph.D.",
+                "img": "mls_pgd.jpg"
+            },
+            {
+                "course": "Nursing Science - PGDN, M.Sc., Ph.D.",
+                "img": "nursing_pgd.png"
+            },
+            {
+                "course": "Industrial Chemistry - PGD, M.Sc., Ph.D.",
+                "img": "ich_pgd.jpg"
+            },
+            {
+                "course": "Biochemistry - PGD, M.Sc., Ph.D.",
+                "img": "bch_pgd.jpg"
+            },
+            {
+                "course": "Computer Science - PGD, M.Sc., Ph.D.",
+                "img": "cs_pgd.jpg"
+            },
+            {
+                "course": "Accounting - PGD, M.Sc., Ph.D.",
+                "img": "accounting_pgd.jpg"
+            },
+            {
+                "course": "Business Administration - MBA, PGD, M.Sc., Ph.D.",
+                "img": "pgd.jpg"
+            },
+            {
+                "course": "Criminology and Security Studies - PGD, M.Sc., Ph.D.",
+                "img": "criminology_pgd.jpg"
+            },
+            {
+                "course": "Political Science - PGD, M.Sc., Ph.D.",
+                "img": "political.jpeg"
+            },
+            {
+                "course": "International Relations - PGD, M.Sc., Ph.D.",
+                "img": "international.jpg"
+            }
+        ]
+    }
+]
+

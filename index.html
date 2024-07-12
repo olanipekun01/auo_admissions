@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+
+        .first_section {
+            background-image: url("/assets/_MG_1939.jpg"), url("assets/_MG_1939.jpg");
+            background-repeat: no-repeat, repeat;
+            background-color: #cccccc;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+        }
+
+        .second_section {
+            
+            background: #077105;
+        }
+
+        #menubar {
+
+        }
+
+       
+
+        #xRegular {
+            display: none;
+        }
+
+        #menuBar.active {
+            display: none;
+        }
+
+        #navBar.active {
+            display: flex;
+        }
+
+        #xRegular.active {
+            display: flex;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <header class="relative flex justify-between item-center bg-gradient-to-r px-[20px] lg:px-[70px] py-6 from-[#077105] via-[#077105] to-[#049d04]">
+        <a href="./index.html" class="flex -gap-1 items-center -ml-2 lg:-ml-5">
+            <img src="./assets/achieverslogo.svg" class="w-[40px] lg:w-20 " alt="">
+            <div class="text-[#fff]">
+                <h1 class="text-xl lg:text-3xl text-red font-bold ">ACHIEVERS UNIVERSITY</h1>
+                <h5 class="text-sm lg:text-md">KM 1, Idasen- Ute Road, Owo, Ondo State</h5>
+            </div>
+        </a>
+
+        
+        <ul id="navBar" class="absolute hidden left-0 top-[95px] lg:top-[0px]  bg-white lg:bg-transparent p-0 w-[100%] lg:w-fit lg:relative decoration-none text-[#077105] lg:text-[#fff] lg:flex flex-col lg:flex-row items-center lg:gap-12 text-[20px]">
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]  hover:text-red-600"><a href="./pages/programmes.php" class="">Programmes</a></li>
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/faqs.html">Faqs</a></li>
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/apply.html">How to apply</a></li>
+        </ul>
+
+        <img src="./assets/bx-menu.png" alt="" onclick="runNav()" id="menuBar" class="w-[40px] lg:hidden">
+        <img src="./assets/x-regular-24.png" onclick="cancelNav()" id="xRegular" alt="" class="w-[40px] lg:hidden">
+    </header>
+    <main>
+        <section class="first_section  flex-col justify-center items-center">
+            <div class="bg-[#fff] w-[100%] h-[100%] lg:w-[50%] px-[30px] lg:px-[70px] bg-opacity-60 flex gap-5 flex-col justify-center">
+                <h2 class="w-[100%] lg:w-[65%] text-[#077105] text-[46px] lg:text-[56px] font-bold leading-[56px] ">
+                    JOIN OUR VIBRANT ACADEMIC COMMUNITY
+                </h2>
+                <a href="" class="px-5 py-3 mt-5 text-[#077105] rounded-md hover:bg-[#7faf7d] hover:text-[#fff] text-[24px] shadow-lg font-bold w-fit lg:max-w-[240px] bg-white">Register Now!</a>
+            </div>
+        </section>
+
+        <section class="second_section  lg:h-[400px] border-b-[1px] border-[#7faf7d] flex flex-col-reverse lg:flex-row items-start px-[0px] justify-between">
+            <div class="w-[100%] lg:w-[50%] pb-5 lg:pb-0 pl-9 lg:pl-[60px] pt-[30px]">
+                <div class="inline-flex flex-col gap-2">
+                    <h5 class="Capitalise text-[20px] lg:text-[25px] text-[#7faf7d] font-semibold">Check out programmes we offer</h5>
+                    <a href="" class="px-5 py-3 text-[#077105] rounded-md hover:bg-[#7faf7d] hover:text-[#fff] text-[19px] shadow-lg font-bold max-w-[230px] bg-white">Go to Programmes</a>
+                </div>
+                <div class="mt-6 text-[#7faf7d] text-[20px] flex flex-col gap-2">
+                    <a href="https://web.facebook.com/AchieversUniversityOwoOnline/" class="flex gap-3 flex-row items-center">
+                        <img class="w-[30px] h-[30px] lg:w-[60px] lg:h-[60px]" src="./assets/facebooklogo.png" alt="">
+                        <span class="hover:tracking-wide text-lg lg:text-2xl">Achievers University, Owo Online</span>
+                    </a>
+                    <a href="https://www.instagram.com/achieversuniversityowo" class="flex gap-3 flex-row items-center">
+                        <img class="w-[30px] h-[30px] lg:w-[60px] lg:h-[60px]" src="./assets/instagramlogo.png" alt="">
+                        <span class="hover:tracking-wide text-lg lg:text-2xl">achieversuniversityowo</span>
+                    </a>
+                    <a href="https://www.x.com/AchieversUni" class="flex gap-3 flex-row items-center">
+                        <img class="w-[30px] h-[30px] lg:w-[60px] lg:h-[60px]" src="./assets/twitterlogo.png" alt="">
+                        <span class="hover:tracking-wide text-lg lg:text-2xl">AchieversUni</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="w-[100%] lg:w-[50%] flex flex-col items-center">
+                <p class="lg:rounded-lg mt-0 lg:-mt-[25%] uppercase text-[#077105] bg-white w-[100%] lg:w-[75%] p-[15px] lg:p-[40px] text-center text-[36px] lg:text-[55px] font-bold">Applications are now open for 2024/2025 admissions</p>
+
+                <span class="mt-1 lg:mt-9 text-[#7faf7d] text-left text-[12px] lg:text-[25px] font-bold">...Knowledge, Integrity and Leadership</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="flex flex-col gap-3 lg:items-center py-9 bg-[#077105] text-white">
+        <div class="px-9 lg:px-0">
+            <span class="capitalize text-[12px] lg:text-[20px]">for more information visit <a href="https://www.achievers.edu.ng" class="text-red-600">Achievers website</a> Or call</span> 
+        </div>
+        <div class="px-9 lg:px-0">
+            <span class="capitalize text-[12px] lg:text-[20px]">Adebayo: 08033432195; Alaba: 08037062508; Oluchi: 08039366046; Temidayo: 07030958994</span>
+        </div>
+    </footer>
+
+
+
+    <script src="./scripts/script.js" >
+        
+    </script>
+</body>
+</html>

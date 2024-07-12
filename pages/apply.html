@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+
+
+
+
+            #menubar {
+
+            }
+    
+           
+    
+            #xRegular {
+                display: none;
+            }
+    
+            #menuBar.active {
+                display: none;
+            }
+    
+            #navBar.active {
+                display: flex;
+            }
+    
+            #xRegular.active {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="relative flex justify-between item-center bg-gradient-to-r px-[20px] lg:px-[70px] py-6 from-[#077105] via-[#077105] to-[#049d04]">
+        <a href="../index.html" class="flex -gap-1 items-center -ml-2 lg:-ml-5">
+            <img src="../assets/achieverslogo.svg" class="w-[40px] lg:w-20 " alt="">
+            <div class="text-[#fff]">
+                <h1 class="text-xl lg:text-3xl text-red font-bold ">ACHIEVERS UNIVERSITY</h1>
+                <h5 class="text-sm lg:text-md">KM 1, Idasen- Ute Road, Owo, Ondo State</h5>
+            </div>
+        </a>
+
+        
+        <ul id="navBar" class="absolute hidden z-5 left-0 top-[95px] lg:top-[0px]  bg-white lg:bg-transparent p-0 w-[100%] lg:w-fit lg:relative decoration-none text-[#077105] lg:text-[#fff] lg:flex flex-col lg:flex-row items-center lg:gap-12 text-[20px]">
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]  hover:text-red-600"><a href="./programmes.php" class="">Programmes</a></li>
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./faqs.html">Faqs</a></li>
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./apply.html">How to apply</a></li>
+        </ul>
+
+        <img src="../assets/bx-menu.png" alt="" onclick="runNav()" id="menuBar" class="w-[40px] lg:hidden">
+        <img src="../assets/x-regular-24.png" onclick="cancelNav()" id="xRegular" alt="" class="w-[40px] lg:hidden">
+    </header>
+
+    <main class="bg-[#fff] pt-1 ">
+            <div class=" pt-[30px] lg:pt-[70px]">
+                <h3 class="px-[20px] lg:px-[70px] text-4xl text-[#077105] font-bold">General Requirements For Admission</h3>
+                <div class="px-[20px] lg:px-[70px] flex flex-col lg:flex-row lg:justify-between gap-8 mt-12">
+                    <div class="w-[100%] lg:w-[50%]">
+                        <h4 class="text-[25px] text-[#077105] text-bold">UTME CANDIDATES</h4>
+                        <ol class="mt-8 list-decimal px-[20px] flex flex-col gap-5 text-[20px]">
+                            <li class="">Candidates are required to have sat for the 2024 Unified Tertiary Matriculation Examination (UTME) with a minimum score as approved by JAMB</li>
+                            <li class="">Applicants must also obtain a minimum of five credit passes at not more than two sittings in WAEC (SSCE)/ NECO (SSCE) or NABTEB. These should include English Language, Mathematics and any three other subjects relevant to the proposed course of study.</li>
+                        </ol>
+                    </div>
+                    <div class="w-[100%] lg:w-[50%]">
+                        <h4 class="text-[25px] text-[#077105] text-bold">DIRECT ENTRY CANDIDATES</h4>
+                        <ul class="mt-8 list-disc px-[20px] flex flex-col gap-5 text-[20px]">
+                            <li class="">
+                                <h5 class="">DIRECT ENTRY CANDIDATES (200 LEVEL)</h5>
+                                <p class="text-[18px] mt-5">As for A (ii.) above, but with 2 passes at either A Level, IJMB or JUPEB examinations. Holders of ND, NCE, or ATS results in relevant disciplines are eligible for admission.  Candidates are also expected to have purchased the Direct Entry form of JAMB for the 2024/2025 Academic Session.</p>
+                                <ol class="list-decimal text-[16px] mt-5 px-[20px] flex flex-col gap-3">
+                                    <li class="">Bachelor of Nursing Science (B.NSc.) candidates shall, in addition to A (ii.) above, hold at least two A Level passes in Biology/Zoology and any one of Chemistry or Physics; OR the Registered Nursing Certificate (RN) of the Nursing and Midwifery Council of Nigeria; OR a B.Sc. degree (with at least Second Class Lower) in any of the Biological Sciences.</li>
+                                    <li class="">Bachelor of Medical Laboratory Science (B.MLS) candidates shall, in addition to A (ii.) above, hold at least two A Level passes in Biology/Zoology and any one of Chemistry or Physics; Medical Laboratory Technician Diploma of the Medical Laboratory Science Council of Nigeria (MLSCN); B.Sc. degree (with at least Second Class Lower) in any of the Biological Sciences.</li>
+                                    <li>Candidates applying for any of the Bachelor of Engineering (B.Eng.) programmes, shall, in addition to A (ii.) above, hold at least two A Level passes, including Mathematics and Physics; OR National Diploma (Upper Credit) in Engineering.</li>
+                                    <li>LL.B., candidates shall, in addition to A (ii.) above, have obtained two papers at Principal or Advanced level in HSC, GCE, IJMB or JUPEB; OR an acceptable bachelor’s degree. A minimum of WAEC/NECO SSCE/GCE O Level credit pass in Literature in English is mandatory for all intending candidates.</li>
+                                </ol>
+                            </li>
+
+                            <li class="">
+                                <h5 class="">DIRECT ENTRY CANDIDATES (300 LEVEL)</h5>
+                                <p class="text-[18px] mt-5">Candidates should be holders of HND in their respective fields of study. HND in Electrical/Electronic Engineering, Statistics or Mathematics is acceptable for B.Sc. Computer Science. HND in Computer Engineering or Electrical & Electronics Engineering is acceptable for B.Eng. Electrical and Electrical Engineering, Computer Engineering, Mechatronics Engineering and Biomedical Engineering. </p>
+                                <p class="text-[18px] mt-5">Holders of professional certificates such as ACA, ACIB, ACIS, ACIN and ACIT are eligible for admission into Accounting and Business Administration. </p>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class=" lg:px-[70px] flex flex-col lg:flex-row lg:justify-around mt-12">
+                    <div class="bg-[#077105] text-[#fff] w-[100%] lg:w-[45%] px-9 lg:px-12 py-9">
+                        <h4 class="text-[30px] text-[#fff] text-bold">How To Apply</h4>
+
+                        
+                        <div class="mt-10">
+                            <p class="text-[18px]">Candidates who did not choose Achievers University in the JAMB UTME and Direct Entry forms can process admissions by:</p>
+                            <ol class="list-decimal text-[16px] mt-5 px-[20px] flex flex-col gap-3">
+                                <li class="">Visiting the University website, <a class="text-red-700 font-bold" href="https://apply.achievers.edu.ng">https://apply.achievers.edu.ng</a>, to apply online.</li>
+                                <li class="">Obtaining the forms at Achievers University, Owo or any of the screening centres. (On the day of screening)</li>
+                            </ol>
+
+                            <p class="text-[18px] mt-5">Candidates who have chosen Achievers University in the JAMB UTME application are to pay a screening fee of N2,000 while those who did not would pay N10,000 application fee to Stanbic IBTC Account No. 0044498901.</p>
+
+                            <p class="text-[18px] mt-5">Please click the link below to access our admission portal. <a class="block text-red-700 font-bold" href="https://https://apply.achievers.edu.ng/login">Apply for 2024/2025 Undergraduate Admission</a> A scanned copy of each of the under-listed documents should be uploaded along with the completed admission form on the portal. This will allow for a prompt decision on whether the candidate is qualified or not: 1. 2024 UTME result. Candidates MUST change to Achievers University Owo. 2. WAEC results (Two sittings allowed.) 3. Receipt for payment for the form</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#e6ede9] w-[100%] lg:w-[45%] px-9 lg:px-12 py-9">
+                        <h4 class="text-[30px] text-[#077105] text-bold">Screening Exercise</h4>
+
+                        
+                        <div class="mt-10">
+                            <p class="text-[18px]">Screening of applicants shall hold at the following designated centres across the country on a date to be announced later.</p>
+                            <ol class="list-decimal text-[16px] mt-5 px-[20px] flex flex-col gap-3">
+                                <li class="">
+                                    <span class="text-[#077105] font-bold">OWO: </span><span>Achievers University, Owo, Km 1, Idasen-Ute Road, Owo, Ondo State. <br/>Contacts: Alaba – 0803-706-2508, Tunde-0803-222-9522</span>
+                                </li>
+                                <li class="">
+                                    <span class="text-[#077105] font-bold">IBADAN: </span><span>Achievers High School, Km 2, Off Arulogun Road, Ojo, Ibadan, Oyo State. <br/>Contacts: Gbenga – 0813-459-1733, Dokun – 0803-220-0325.</span>
+                                </li>
+                                <li class="">
+                                    <span class="text-[#077105] font-bold">ADO-EKITI: </span><span>Tinuola Maximum Schools & International College, Ekiti Housing Estate, Opposite Federal Housing (Oke-Ila, Afao Road, Ado-Ekiti, Ekiti State. <br/>Contacts: Olukayode – 0806-248-4836, Kayode – 0814-111-8724.</span>
+                                </li>
+                                <li class="">
+                                    <span class="text-[#077105] font-bold">ABUJA: </span><span>Plot C. 39 Cadastral Zone B. 12, Sector Centre C, Yellow Building Behind Oando Filling Station, Opposite Prince & Princess Estate, Kaura, Abuja. <br/>Contacts: Innocent – 0810-706-7779, Ayo – 0816-357-7472, Emilia – 0806-555-9489.</span>
+                                </li>
+                                <li class="">
+                                    <span class="text-[#077105] font-bold">LAGOS: </span><span>Krisbethel College, B.O. 2-6, Federal Housing Estate, Off Akinogun Bus Stop, Ipaja, Lagos. <br/>Contacts: Bayo – 0803-343-2195, Bunmi – 0703-847-7064.</span>
+                                </li>
+                               
+                            </ol>
+
+                            <p class="text-[18px] mt-5">For further enquiries, visit the University website, www.achievers.edu.ng, or contact the following:Adebayo: 0803-343-2195, Alaba: 0803-706-2508, Oluchi: 0803-936-6046 or Tunde: 0803-222-9522.</p>
+
+                            
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+            </div>
+    </main>
+
+    <footer class="flex flex-col gap-3 lg:items-center py-9 bg-[#077105] text-white">
+        <div class="px-9 lg:px-0">
+            <span class="capitalize text-[12px] lg:text-[20px]">for more information visit <a href="https://www.achievers.edu.ng" class="text-red-600">Achievers website</a> Or call</span> 
+        </div>
+        <div class="px-9 lg:px-0">
+            <span class="capitalize text-[12px] lg:text-[20px]">Adebayo: 08033432195; Alaba: 08037062508; Oluchi: 08039366046; Temidayo: 07030958994</span>
+        </div>
+    </footer>
+    <script src="../scripts/script.js" >
+        
+    </script>
+</body>
+</html>
